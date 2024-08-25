@@ -47,6 +47,7 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
       imageIcon: "/image/icon/stack.svg",
       imageIcon2: "/image/icon/stack.svg",
       nameOfItem: "Stack",
+      path:"stack",
       id: "4",
     },
     {

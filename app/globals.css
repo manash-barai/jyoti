@@ -74,6 +74,10 @@
   top: 7px;
   left: 0px;
 }
+.projectAbsoluteShadow{
+  box-shadow: 0px 0px 27.4px 0px rgba(103, 100, 100, 0.25), 0px 4px 63.7px 0px rgba(188, 182, 182, 0.25);
+
+}
 @keyframes bounceWidth {
   0% {
     width: 80px;

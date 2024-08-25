@@ -10,26 +10,30 @@ const page = () => {
 
   const project: IReview[] = [
     {
-        image:"/image/project/Group 1261152941.png",
-        review:"95%+",
-        description:"of astrology apps focus on specific principles, requiring users to switch between platforms. forcing users to juggle multiple platforms for a comprehensive experience.", 
+      image: "/image/project/Group 1261152941.png",
+      review: "95%+",
+      description:
+        "of astrology apps focus on specific principles, requiring users to switch between platforms. forcing users to juggle multiple platforms for a comprehensive experience.",
     },
     {
-        image:"/image/project/Group 1261152942.png",
-        review:"10/12",
-        description:"  apps focus solely on daily horoscopes and don’t offer astrology-based partner matching, leaving a gap for users interested in both.", 
+      image: "/image/project/Group 1261152942.png",
+      review: "10/12",
+      description:
+        "  apps focus solely on daily horoscopes and don’t offer astrology-based partner matching, leaving a gap for users interested in both.",
     },
     {
-        image:"/image/project/Group 1261152944.png",
-        review:"80%+",
-        description:"of astrology apps do not offer direct audio chat features, less interactions between users & astrologer. This lack of accessibility can make it difficult for users to receive immediate and tailored astrological advice.", 
-    }, {
-        image:"/image/project/Group 1261152945.png",
-        review:"50%+",
-        description:"50% of users want to learn astrology but struggle due to a lack of in-depth educational resources in most astrology apps.", 
-    }
-  ]
-
+      image: "/image/project/Group 1261152944.png",
+      review: "80%+",
+      description:
+        "of astrology apps do not offer direct audio chat features, less interactions between users & astrologer. This lack of accessibility can make it difficult for users to receive immediate and tailored astrological advice.",
+    },
+    {
+      image: "/image/project/Group 1261152945.png",
+      review: "50%+",
+      description:
+        "50% of users want to learn astrology but struggle due to a lack of in-depth educational resources in most astrology apps.",
+    },
+  ];
 
   return (
     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden ">
@@ -114,29 +118,136 @@ const page = () => {
       </div>
 
       <div className="flex flex-wrap gap-7  justify-between my-12">
-
-      {project.map((p, i) => (
-  <div key={i} className="w-[185px] flex flex-col items-center justify-start text-center space-y-2">
-    <div className="w-[150px] h-[120px] flex items-center justify-center ">
-      <Image 
-        src={p.image} 
-        alt="" 
-        width={120} 
-        height={100} 
-        quality={100} 
-        
-      />
-    </div>
-    <p>{p.review}</p>
-    <p className="font-thin text-[13px]">{p.description}</p>
-  </div>
-))}
-
-        
-
+        {project.map((p, i) => (
+          <div
+            key={i}
+            className="w-[185px] flex flex-col items-center justify-start text-center space-y-2"
+          >
+            <div className="w-[150px] h-[120px] flex items-center justify-center ">
+              <Image
+                src={p.image}
+                alt=""
+                width={120}
+                height={100}
+                quality={100}
+              />
+            </div>
+            <p>{p.review}</p>
+            <p className="font-thin text-[13px]">{p.description}</p>
+          </div>
+        ))}
       </div>
 
+      <div className="relative mt-60 bg-[#232121]  rounded-[15px] pt-32 px-11 pb-11">
+        <div className="absolute -top-48 left-1/2 transform -translate-x-1/2 w-[300px] h-[300px] rounded-full bg-[#282829] projectAbsoluteShadow border border-zinc-300 flex justify-center items-center">
+          <Image
+            src="/image/project/image 30.png"
+            alt=""
+            width={122}
+            height={200}
+            quality={100}
+          />
+        </div>
 
+        <div className="flex gap-9 items-center justify-between">
+          <div className="w-[65%]    ">
+            <h1 className="text-xl mb-3">
+              Unified Astrology: All Seven Principles in One Platform
+            </h1>
+
+            <p className="text-sm font-light text-[#B7B7B7]">
+              Most astrology apps limit users to specific principles, requiring
+              them to switch between multiple platforms for a complete
+              experience. This platform eliminates this hassle by combining all
+              seven astrological principles into one unified platform,
+              delivering a comprehensive astrology experience effortlessly.
+            </p>
+          </div>
+          <div className=" flex items-center justify-center ">
+            <Image
+              src="/image/project/1st block pic.png"
+              alt=""
+              width={200}
+              height={200}
+            />
+          </div>
+        </div>
+
+        <div className="flex gap-9 items-center  justify-between">
+          <div className=" flex items-center justify-center ">
+            <Image
+              src="/image/project/2nd block pic.png"
+              alt=""
+              width={350}
+              height={200}
+            />
+          </div>
+          <div className="w-[65%]    ">
+            <h1 className="text-xl mb-3">
+            All-in-One Astrology and Compatibility Companion
+            </h1>
+
+            <p className="text-sm font-light text-[#B7B7B7]">
+            Unlike most astrology apps, this platform combines daily horoscopes with astrology-based partner matching. Users can search for potential partners, check match percentages, and assess compatibility with their current partner, all within a distinct and personalized UI.
+            </p>
+          </div>
+        </div>
+
+
+
+
+        <div className="flex gap-9 items-center justify-between">
+          <div className="w-[65%]    ">
+            <h1 className="text-xl mb-3">
+            Revolutionizing Astrology     
+                   </h1>
+
+
+            <p className="text-sm font-light text-[#B7B7B7]">
+            This platform stands out by offering real-time audio chat with astrologers, bridging the gap between daily horoscopes and personalized advice. Unlike many apps with limited interaction, this platform provides immediate, tailored guidance and a comprehensive astrological experience.
+            </p>
+          </div>
+          <div className=" flex items-center justify-center ">
+            <Image
+              src="/image/project/3rd block pic.png"
+              alt=""
+              width={200}
+              height={200}
+            />
+          </div>
+        </div>
+
+        <div className="flex gap-9 items-center justify-between">
+
+        <div className=" flex items-center justify-center ">
+            <Image
+              src="/image/project/image 28.png"
+              alt=""
+              width={200}
+              height={200}
+            />
+          </div>
+          <div className="w-[65%]    ">
+            <h1 className="text-xl mb-3">
+            Revolutionizing Astrology     
+                   </h1>
+
+
+            <p className="text-sm font-light text-[#B7B7B7]">
+            This platform stands out by offering real-time audio chat with astrologers, bridging the gap between daily horoscopes and personalized advice. Unlike many apps with limited interaction, this platform provides immediate, tailored guidance and a comprehensive astrological experience.
+            </p>
+          </div>
+          
+        </div>
+
+
+
+
+
+
+
+
+      </div>
     </div>
   );
 };

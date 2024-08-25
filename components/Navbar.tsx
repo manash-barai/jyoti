@@ -7,6 +7,7 @@ interface IFirstMenu {
   imageIcon: string;
   imageIcon2: string;
   nameOfItem: string;
+  path?:string;
   id: string;
 }
 
@@ -25,18 +26,21 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
       imageIcon: "/image/icon/explore.svg",
       imageIcon2: "/image/icon/explore.svg",
       nameOfItem: "Explore",
+      path:"",
       id: "1",
     },
     {
       imageIcon: "/image/icon/galary.svg",
       imageIcon2: "/image/icon/galary.svg",
       nameOfItem: "Gallary",
+      path:"gallary",
       id: "2",
     },
     {
       imageIcon: "/image/icon/projects.svg",
       imageIcon2: "/image/icon/projects.svg",
       nameOfItem: "Projects",
+      path:"project",
       id: "3",
     },
     {
@@ -156,7 +160,7 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
                 onClick={() => setMenuName(menuItem.nameOfItem)}
               >
                 <Link
-                  href={"/"}
+                  href={`/${menuItem.path}`} 
                   style={{
                     width: menuWidth ? "255px" : "60px",
                   }}

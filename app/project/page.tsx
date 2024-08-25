@@ -63,7 +63,7 @@ const page = () => {
       </div>
 
       <h1 className="text-[30px] mb-2 font-bold text-gray-200">Overview</h1>
-      <div className="w-full bg-[#232121] rounded-[15px] p-11 flex border border-zinc-600">
+      <div className="w-full bg-[#232121] rounded-[15px] p-11 gap-3 flex border border-zinc-600">
         <ul className="w-[50%]">
           <li className="mb-9">
             <h2 className="text-[20px] mb-3">What Is Astrology App?</h2>

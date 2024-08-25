@@ -54,6 +54,7 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
       imageIcon: "/image/icon/about.svg",
       imageIcon2: "/image/icon/about.svg",
       nameOfItem: "About",
+      path:"about",
       id: "5",
     },
   ];

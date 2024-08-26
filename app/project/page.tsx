@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 
-
 const Page = () => {
   interface IReview {
     image: string;
@@ -21,7 +20,7 @@ const Page = () => {
       image: "/image/project/Group 1261152942.png",
       review: "10/12",
       description:
-        "  apps focus solely on daily horoscopes and don’t offer astrology-based partner matching, leaving a gap for users interested in both.",
+        "apps focus solely on daily horoscopes and don’t offer astrology-based partner matching, leaving a gap for users interested in both.",
     },
     {
       image: "/image/project/Group 1261152944.png",
@@ -93,10 +92,10 @@ const Page = () => {
               </p>
             </li>
             <li>
-              <h2 className="text-[18px] sm:text-[20px] mb-3">Tools</h2>
+              <h2 className="text-[18px] sm:text-[20px] mb-3">Role</h2>
               <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
                 UI/UX Designer <br />
-                <span className="underline">Responsibilities:</span> Designed the user interface and user experience for the astrology app, incorporating the client’s specific needs and preferences. Developed prototypes to visualize interactions and workflows, created the app's logo, and worked closely with my manager for guidance throughout the project.
+                <span className="underline">Responsibilities:</span> Designed the user interface and user experience for the astrology app, incorporating the client&apos;s specific needs and preferences. Developed prototypes to visualize interactions and workflows, created the app&apos;s logo, and worked closely with my manager for guidance throughout the project.
               </p>
             </li>
           </ul>

@@ -111,7 +111,7 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
           ) : (
             '->'
           )}
-        </button> :<button className={` bg-zinc-900 border-2 px-1 ${mobileNavbar?'text-[14px]':'text-[18px]'} rounded-full py-0 border-zinc-600 z-50"   ${mobileNavbar ?'absolute -right-3':'fixed top-2 start-1'}  `}  onClick={()=>setMobileNavbar(!mobileNavbar)} >
+        </button> :<button className={`text-white bg-zinc-900 border-2 px-1 ${mobileNavbar?'text-[14px]':'text-[18px]'} rounded-full py-0 border-zinc-600 z-50"   ${mobileNavbar ?'absolute -right-3':'fixed top-2 start-1'}  `}  onClick={()=>setMobileNavbar(!mobileNavbar)} >
           {mobileNavbar?'<-':'->'}
           
         </button> }

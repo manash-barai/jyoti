@@ -53,13 +53,15 @@ export default function RootLayout({
   useEffect(() => {
     if (windowsWidth < 950) {
       document.getElementById("mainRoot")?.removeAttribute("style")
+      document.getElementById("footerStyle")?.removeAttribute("style")
+      
       setMenubar(false)
     }
   }, [windowsWidth]);
 
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-zinc-950`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -71,10 +73,11 @@ export default function RootLayout({
             {children}
           </div>
           <div
-            // style={{
-            //   marginLeft: menuWidth ? "255px" : "60px",
-            //   transition: "margin-left 0.3s ease", // Smooth transition
-            // }}
+            id="footerStyle"
+            style={{
+              marginLeft: menuWidth ? "255px" : "60px",
+              transition: "margin-left 0.3s ease", // Smooth transition
+            }}
           >
             <Footer menuWidth={menuWidth} />
           </div>

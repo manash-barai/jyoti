@@ -3,7 +3,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden ">
+    <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden px-3 ">
     <div className="">
       <h1 className="text-5xl mb-2 font-bold text-gray-200">About Jyoti</h1>
       <p className="text-[17px] text-[#858585] font-light my-11" >

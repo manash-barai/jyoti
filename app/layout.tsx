@@ -48,16 +48,12 @@ export default function RootLayout({
     return () => window.removeEventListener("resize", handleResize);
   }, [windowsWidth]);
 
+  const [menubar,setMenubar]=useState<boolean>(true)
+
   useEffect(() => {
     if (windowsWidth < 950) {
-      alert()
-      mrtyle = {
-        marginLeft: menuWidth ? "" : "0",
-        padding: menuWidth ? "0 " : "0 ",
-        backgroundImage:
-          "linear-gradient( to right, transparent, transparent 20%, rgba(45,45,45,0.3) 100%)",
-        transition: "margin-left 0.3s ease",
-      };
+      document.getElementById("mainRoot")?.removeAttribute("style")
+      setMenubar(false)
     }
   }, [windowsWidth]);
 
@@ -70,15 +66,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar widthsubstract={widthsubstract} />
-          <div style={mrtyle} className="bg-zinc-950 text-white">
+          <Navbar menubar={menubar} widthsubstract={widthsubstract} />
+          <div style={mrtyle} id="mainRoot" className="bg-zinc-950 text-white">
             {children}
           </div>
           <div
-            style={{
-              marginLeft: menuWidth ? "255px" : "60px",
-              transition: "margin-left 0.3s ease", // Smooth transition
-            }}
+            // style={{
+            //   marginLeft: menuWidth ? "255px" : "60px",
+            //   transition: "margin-left 0.3s ease", // Smooth transition
+            // }}
           >
             <Footer menuWidth={menuWidth} />
           </div>

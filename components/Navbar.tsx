@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 interface IFirstMenu {
   imageIcon: string;
@@ -13,9 +13,10 @@ interface IFirstMenu {
 
 interface NavbarProps {
   widthsubstract: (v: boolean) => void;
+  menubar:boolean
 }
 
-export default function Navbar({ widthsubstract }: NavbarProps) {
+export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
   const [menuWidth, setMenuWidth] = useState<boolean>(true);
   const [menuName, setMenuName] = useState<string>("Explore");
   const [menuId, setMenuId] = useState<string>("Explore");
@@ -80,9 +81,15 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
     },
   ];
 
+  const [mobileNavbar, setMobileNavbar] = useState<boolean>(false)
+  useEffect(()=>{
+    menubar && setMobileNavbar(true)
+    menubar ? setMenuWidth(true):setMenuWidth(false)
+  },[menubar,mobileNavbar])
+
   return (
     <div
-      className={`h-[100vh] fixed start-0 top-0 bg-zinc-900 border-r-2 border-zinc-600 ${
+      className={`${menubar?'h-[100vh]':'h-[90vh] border-b-2 shadow-black shadow-2xl rounded-br-full'} fixed top-0 start-0  bg-zinc-900 border-r-2 border-zinc-600 z-40 ${mobileNavbar?"fixed  mobileexpand ":'fixed mobilesquez  '}  ${
         menuWidth ? "bounce-width" : "width-expand"
       } shadow`}
       style={{
@@ -90,8 +97,8 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
       }}
     >
       <div className="flex flex-col h-screen justify-between py-4 relative">
-        <button
-          className="expand rounded-full overflow-hidden  absolute end-[-10px] bg-zinc-700 "
+        {menubar ?  <button
+          className="expand rounded-full overflow-hidden  absolute -end-[15px] bg-zinc-900 text-white px-1 py-0 border border-zinc-600  "
           onClick={() => {
             setMenuWidth(!menuWidth);
             widthsubstract(!menuWidth);
@@ -100,31 +107,14 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
           onMouseLeave={() => setHoverId(null)}
         >
           {menuWidth ? (
-            <Image
-              className="rounded-full"
-              src={
-                hoverId === "toggle"
-                  ? "/images/arrowAndSearch/CircleChevron Left.png"
-                  : "/images/arrowAndSearchGrey/CircleChevron Left.png"
-              }
-              alt="arrow"
-              width={24}
-              height={24}
-            />
+           "<-"
           ) : (
-            <Image
-              className="rounded-full"
-              src={
-                hoverId === "toggle"
-                  ? "/images/arrowAndSearch/CircleChevron Right.png"
-                  : "/images/arrowAndSearchGrey/CircleChevron Right.png"
-              }
-              alt="arrow"
-              width={20}
-              height={20}
-            />
+            '->'
           )}
-        </button>
+        </button> :<button className={` bg-zinc-900 border-2 px-1 ${mobileNavbar?'text-[14px]':'text-[18px]'} rounded-full py-0 border-zinc-600 z-50"   ${mobileNavbar ?'absolute -right-3':'fixed top-2 start-1'}  `}  onClick={()=>setMobileNavbar(!mobileNavbar)} >
+          {mobileNavbar?'<-':'->'}
+          
+        </button> }
         <div className="menu">
           <ul className="flex flex-col items-center">
             <li
@@ -254,7 +244,16 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
                 }  `}
                 onMouseEnter={() => setMenuId(menuItem.id)}
                 onMouseLeave={() => setMenuId("")}
-                onClick={() => setMenuName(menuItem.nameOfItem)}
+                onClick={() => {menuItem.id==='6' &&( window.location.href = "mailto:jyotishikary400@gmail.com?subject=Subject%20Here&body=Body%20Here");
+                  menuItem.id==='7' &&( window.location.href = "https://www.linkedin.com/in/jyotishikary/");
+                  menuItem.id==='8' &&( window.location.href = "https://www.behance.net/jyotishikary400_s")
+
+
+
+                }
+              
+              
+              }
               >
                 <Link
                   href={"/"}

@@ -257,3 +257,29 @@
   }
 }
 
+
+.mobileexpand{
+  animation:mobileNav 0.8s ease-in-out forwards ;
+}
+
+.mobilesquez{
+  animation:mobileNavExpand 0.8s ease-in-out forwards ;
+}
+@keyframes mobileNav {
+
+ 
+  100% {
+   
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes mobileNavExpand {
+
+  
+  100% {
+    left: -5000px;
+    top: 0;
+  }
+}

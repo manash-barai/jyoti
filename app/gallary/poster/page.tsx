@@ -4,7 +4,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden ">
+     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden px-3 ">
       <div className="">
         <h1 className="text-5xl mb-2 font-bold text-gray-200">
         Various Type Of Posters

@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import React from "react";
+import { useRouter } from 'next/navigation';
 
 interface Thought {
   icon: string;
@@ -8,30 +9,10 @@ interface Thought {
   service: string;
 }
 
-const social: Thought[] = [
-  {
-    icon: "/image/icon/adove.png",
-    title: "Adobe Illustrator",
-    service: "Designing Tool",
-  },
-  {
-    icon: "/image/icon/ps.png",
-    title: "Adobe Photoshop",
-    service: "Designing Tool",
-  },
-  {
-    icon: "/image/icon/figma.png",
-    title: "Figma",
-    service: "Designing Tool",
-  },
-  {
-    icon: "/image/icon/chatgpt.png",
-    title: "Chat GPT",
-    service: "Artificial Intelligence",
-  },
-];
 
 const page = () => {
+  const router = useRouter();
+
   return (
     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden ">
       <div className="">
@@ -50,6 +31,7 @@ const page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/art-gallary')}
           >
             <div className="h-[235px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image
@@ -77,6 +59,7 @@ const page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/dashboard')}
           >
             <div className="h-[235px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image
@@ -121,6 +104,7 @@ const page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group bg-zinc-900  overflow-hidden rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/paper-craft')}
           >
             <div className="h-[235px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image
@@ -135,9 +119,9 @@ const page = () => {
             </div>
             <div className="p-5 flex justify-between  items-end">
               <div>
-                <h1 className="text-slate-50 text-xl">Art Gallary Site</h1>
+                <h1 className="text-slate-50 text-xl">Paper Crafting Site</h1>
                 <p className="text-zinc-600 text-md text-[13px] leading-snug	  ">
-                This art platform landing page highlights a curated collection of global artworks. The design offers both dark and light themes, emphasizing visual appeal while guiding users to explore and discover new art.
+                Experience the joy of creating and appreciating handcrafted decorative objects, where every piece tells a unique story crafted with care and creativity.
                 </p>
               </div>
 
@@ -148,6 +132,7 @@ const page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/food')}
           >
             <div className="h-[235px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image
@@ -164,9 +149,9 @@ const page = () => {
             </div>
             <div className="p-5 flex justify-between  items-end">
               <div>
-                <h1 className="text-slate-50 text-xl">Dashboard Design</h1>
+                <h1 className="text-slate-50 text-xl">Food Zone Site</h1>
                 <p className="text-zinc-600  text-md text-[13px] leading-snug	">
-                This dashboard delivers key e-commerce analytics through vibrant charts, offering insights at a glance with both dark and light themes for user flexibility.
+                Welcome to Food Zone, where culinary artistry meets convenience—explore and order exquisite dishes crafted to satisfy your cravings, from breakfast to dinner.
                 </p>
               </div>
 
@@ -179,6 +164,7 @@ const page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/poster')}
           >
             <div className="h-[210px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image
@@ -195,9 +181,9 @@ const page = () => {
             </div>
             <div className="p-5 flex justify-between  items-end">
               <div>
-                <h1 className="text-slate-50 text-xl">Dashboard Design</h1>
+                <h1 className="text-slate-50 text-xl">Various Type Of Posters</h1>
                 <p className="text-zinc-600  text-md text-[13px] leading-snug	">
-                This dashboard delivers key e-commerce analytics through vibrant charts, offering insights at a glance with both dark and light themes for user flexibility.
+                This art platform landing page highlights a curated collection of global artworks. The design offers both dark and light themes, emphasizing visual appeal while guiding users to explore and discover new art.
                 </p>
               </div>
 

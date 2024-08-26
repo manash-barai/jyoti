@@ -1,7 +1,12 @@
+"use client";
 import Image from 'next/image'
 import React from 'react'
 
+import { useRouter } from 'next/navigation';
+
+
 const page = () => {
+  const router = useRouter();
   return (
     <div>
      <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden ">

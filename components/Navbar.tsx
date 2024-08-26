@@ -134,7 +134,7 @@ export default function Navbar({ widthsubstract }: NavbarProps) {
               }}
             >
               <Image
-                src="/images/avatar.png"
+                src="/image/home/jyoti.png"
                 alt="ProfileImage"
                 width={menuWidth ? 50 : 40}
                 height={menuWidth ? 50 : 40}

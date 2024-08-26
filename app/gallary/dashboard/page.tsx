@@ -1,7 +1,12 @@
+"use client";
 import Image from 'next/image'
 import React from 'react'
 
+import { useRouter } from 'next/navigation';
+
+
 const page = () => {
+  const router = useRouter();
   return (
     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden ">
       <div className="">
@@ -91,6 +96,7 @@ const page = () => {
         <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/paper-craft')}
           >
             <div className="h-[235px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image
@@ -117,6 +123,7 @@ const page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={()=>router.push('/gallary/food')}
           >
             <div className="h-[235px] overflow-hidden  homepageCardGradient flex justify-center items-center">
               <Image

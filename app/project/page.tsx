@@ -95,7 +95,7 @@ const Page = () => {
               <h2 className="text-[18px] sm:text-[20px] mb-3">Role</h2>
               <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
                 UI/UX Designer <br />
-                <span className="underline">Responsibilities:</span> Designed the user interface and user experience for the astrology app, incorporating the client&lsquo;s specific needs and preferences. Developed prototypes to visualize interactions and workflows, created the app&lsquo;s logo, and worked closely with my manager for guidance throughout the project.
+                <span className="underline">Responsibilities:</span> Designed the user interface and user experience for the astrology app, incorporating the client&rsquo;s specific needs and preferences. Developed prototypes to visualize interactions and workflows, created the app&rsquo;s logo, and worked closely with my manager for guidance throughout the project.
               </p>
             </li>
           </ul>

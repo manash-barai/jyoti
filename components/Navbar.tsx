@@ -25,34 +25,34 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
   const firstMenu: IFirstMenu[] = [
     {
       imageIcon: "/image/icon/explore.svg",
-      imageIcon2: "/image/icon/explore.svg",
+      imageIcon2: "/image/icon/Explore_gray.svg",
       nameOfItem: "Explore",
       path:"",
       id: "1",
     },
     {
-      imageIcon: "/image/icon/galary.svg",
+      imageIcon: "/image/icon/Gallery_White.svg",
       imageIcon2: "/image/icon/galary.svg",
-      nameOfItem: "Gallary",
+      nameOfItem: "Gallery",
       path:"gallary",
       id: "2",
     },
     {
-      imageIcon: "/image/icon/projects.svg",
+      imageIcon: "/image/icon/projects_white.svg",
       imageIcon2: "/image/icon/projects.svg",
       nameOfItem: "Projects",
       path:"project",
       id: "3",
     },
     {
-      imageIcon: "/image/icon/stack.svg",
+      imageIcon: "/image/icon/Stack_white.svg",
       imageIcon2: "/image/icon/stack.svg",
       nameOfItem: "Stack",
       path:"stack",
       id: "4",
     },
     {
-      imageIcon: "/image/icon/about.svg",
+      imageIcon: "/image/icon/about_white.svg",
       imageIcon2: "/image/icon/about.svg",
       nameOfItem: "About",
       path:"about",
@@ -124,6 +124,7 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
               }}
             >
               <Image
+              quality={100}
                 src="/image/home/jyoti.png"
                 alt="ProfileImage"
                 width={menuWidth ? 50 : 40}
@@ -160,16 +161,17 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
                     menuWidth ? "bounce-widthFm" : "width-expandFm"
                   }`}
                 >
-                  <div className="flex items-center gap-3 m-0 p-0">
+                  <div className={`flex items-center justify-between ${menuWidth?'m-0':'m-auto'} gap-3`} >
                     <Image
                       src={
                         menuId === menuItem.id ||
                         menuName === menuItem.nameOfItem
-                          ? menuItem.imageIcon2
+                          ? menuItem.imageIcon
                           : menuItem.imageIcon2
                       }
                       alt="ProfileImage"
-                      width={18}
+                      width={17}
+                      quality={100}
                       height={17}
                       className={`rounded-pill `}
                     />
@@ -264,7 +266,7 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
                     menuWidth ? "bounce-widthFm" : "width-expandFm"
                   }`}
                 >
-                  <div className="flex items-center gap-3 m-0 p-0">
+                  <div className={`flex items-center gap-3 ${menuWidth?'m-0':'m-auto'} p-0`}>
                     <Image
                       src={
                         menuId === menuItem.id ||
@@ -273,6 +275,7 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
                           : menuItem.imageIcon2
                       }
                       alt="ProfileImage"
+                      quality={100}
                       width={25}
                       height={25}
                       className="rounded-pill w-[20px]"

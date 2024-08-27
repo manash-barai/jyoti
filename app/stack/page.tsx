@@ -41,7 +41,7 @@ const Page = () => {
       </div>
 
       <div className='border border-zinc-700 p-5 rounded-2xl mt-10'>
-        <h1 className='text-xl mb-4'>Design</h1>
+        <h1 className='text-xl mb-4 pl-4'>Design</h1>
         <div className="flex flex-wrap gap-4">
           {social.map((thought: Thought, index: number) => (
             <button
@@ -73,7 +73,7 @@ const Page = () => {
       </div>
 
       <div className='border border-zinc-700 p-5 rounded-2xl mt-10'>
-        <h1 className='text-xl mb-4'>Artificial Intelligence</h1>
+        <h1 className='text-xl mb-4 pl-4'>Artificial Intelligence</h1>
         <div className="flex flex-wrap gap-4">
           <button
             className='flex gap-4 border border-transparent rounded-md py-3 px-4 items-center'

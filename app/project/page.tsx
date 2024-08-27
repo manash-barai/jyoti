@@ -57,8 +57,8 @@ const Page = () => {
             </li>
           </ul>
 
-          <div className="flex justify-center items-center">
-            <Image src={"/image/project/1.png"} quality={100} alt="Hero" width={200} height={200} className="w-full max-w-sm" />
+          <div className="flex justify-center items-center ">
+            <Image src={"/image/project/1.png"} quality={100} alt="Hero" width={400} height={400} className="w-full mt-0 lg:-mt-20 max-w-sm" />
           </div>
         </div>
 
@@ -111,7 +111,7 @@ const Page = () => {
                 <Image
                   src={p.image}
                   alt=""
-                  width={120}
+                  width={300}
                   height={100}
                   quality={100}
                 />
@@ -129,7 +129,7 @@ const Page = () => {
             <Image
               src="/image/project/image_30.png"
               alt=""
-              width={122}
+              width={300}
               height={200}
               quality={100}
               />
@@ -160,7 +160,7 @@ const Page = () => {
               <Image
                 src="/image/project/second_block.png"
                 alt=""
-                width={350}
+                width={600}
                 height={200}
               />
             </div>

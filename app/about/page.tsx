@@ -10,7 +10,7 @@ const Page = () => {
           Hello, I&rsquo;m Jyoti Shikary, a passionate and dedicated UI/UX Designer based in Bonga. With a background in nursing, I&rsquo;ve transitioned into the world of design, bringing a unique perspective to my work. My journey into UI/UX began out of a love for creativity and problem-solving, which I discovered during my time at Betazen Infotech in Kolkata.
         </p>
 
-        <Image src="/image/home/jyoti.png" alt='me' width={400} height={400} className='mx-auto rounded-xl mt-11 mb-36' />
+        <Image src="/image/home/jyoti.png" alt='me' width={400} height={400} quality={100} className='mx-auto  rounded-full border border-zinc-600 mt-11 mb-20' />
 
         <p className="text-[17px] text-[#858585] font-light my-11">
           Over the past 7 months, I&rsquo;ve gained hands-on experience in both UI and UX design, working on a diverse range of projects. From crafting intuitive user interfaces to enhancing user experiences, I strive to create designs that are not only visually appealing but also user-centric. My ability to collaborate with cross-functional teams and translate complex requirements into effective designs has been a key asset in my role as a Junior UI/UX Designer.

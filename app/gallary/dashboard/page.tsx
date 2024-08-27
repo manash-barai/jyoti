@@ -24,7 +24,7 @@ const Page = () => {
           <div className="h-[300px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/home/dahboard.png"
-              width={300}
+              width={500}
               height={300}
               quality={100}
               alt="Hero"
@@ -40,7 +40,7 @@ const Page = () => {
           <div className="h-[300px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/project/darkdashboard.png"
-              width={300}
+              width={600}
               height={300}
               quality={100}
               alt="Hero"
@@ -52,20 +52,21 @@ const Page = () => {
 
       <h1 className="text-[30px] mb-4 font-bold text-gray-200">Overview</h1>
       <div className="w-full bg-[#232121] rounded-[15px] p-11 gap-3 border border-zinc-600">
-        <ul className="list-disc relative">
-          <li className="mb-5 text-[#C8C8C8] font-light">
-            Dashboard design for seller management.
+        <ul className=" relative">
+          
+          <li className="mb-5 text-[#C8C8C8] font-light list-disc ">
+          Dashboard design for seller management.
           </li>
-          <li className="mb-5 text-[#C8C8C8] font-light">
+          <li className="mb-5 text-[#C8C8C8] font-light list-disc">
             Features an intuitive interface with charts for sales and analytics.
           </li>
-          <li className="mb-5 text-[#C8C8C8] font-light">
+          <li className="mb-5 text-[#C8C8C8] font-light list-disc">
             Includes key metrics like visitors, orders, product views, and conversion rate.
           </li>
-          <li className="mb-5 text-[#C8C8C8] font-light">
+          <li className="mb-5 text-[#C8C8C8] font-light list-disc">
             Side navigation for easy access to products, orders, customers, and sales data.
           </li>
-          <li className="mb-5 text-[#C8C8C8] font-light">
+          <li className="mb-5 text-[#C8C8C8] font-light list-disc">
             To-do list and balance overview integrated for efficient workflow management.
           </li>
         </ul>
@@ -82,11 +83,11 @@ const Page = () => {
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
                 src="/image/home/artgalary.png"
-                width={300}
+                width={500}
                 height={300}
                 quality={100}
                 alt="Hero"
-                className="transition-transform duration-300 transform group-hover:scale-110"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-5"
               />
             </div>
             <div className="p-5 flex justify-between items-end">
@@ -107,11 +108,11 @@ const Page = () => {
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
                 src="/image/home/foodZone.png"
-                width={270}
+                width={500}
                 height={270}
                 quality={100}
                 alt="Hero"
-                className="transition-transform duration-300 transform group-hover:scale-110"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-16"
               />
             </div>
             <div className="p-5 flex justify-between items-end">

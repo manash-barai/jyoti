@@ -28,11 +28,11 @@ const Page = () => {
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
                 src="/image/home/1.png"
-                width={200}
+                width={300}
                 height={200}
                 quality={100}
                 alt="Hero"
-                className="transition-transform duration-300 transform group-hover:scale-110"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-9"
               />
             </div>
             <div className="p-5 flex justify-between items-end">
@@ -53,11 +53,11 @@ const Page = () => {
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
                 src="/image/home/2.png"
-                width={270}
+                width={400}
                 height={270}
                 quality={100}
                 alt="Hero"
-                className="transition-transform duration-300 transform group-hover:scale-110"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-4"
               />
             </div>
             <div className="p-5 flex justify-between items-end">
@@ -83,11 +83,11 @@ const Page = () => {
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
                 src="/image/home/artgalary.png"
-                width={300}
+                width={500}
                 height={300}
                 quality={100}
                 alt="Hero"
-                className="transition-transform duration-300 transform group-hover:scale-110"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-5"
               />
             </div>
             <div className="p-5 flex justify-between items-end">
@@ -108,11 +108,11 @@ const Page = () => {
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
                 src="/image/home/foodZone.png"
-                width={240}
+                width={500}
                 height={240}
                 quality={100}
                 alt="Hero"
-                className="transition-transform duration-300 transform group-hover:scale-110"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-11"
               />
             </div>
             <div className="p-5 flex justify-between items-end">

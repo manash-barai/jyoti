@@ -21,7 +21,7 @@ const Page = () => {
           <div className="h-[250px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/project/paper1.png"
-              width={300}
+              width={500}
               height={300}
               quality={100}
               alt="Hero"
@@ -37,7 +37,7 @@ const Page = () => {
           <div className="h-[250px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/project/paper2.png"
-              width={300}
+              width={500}
               height={300}
               quality={100}
               alt="Hero"
@@ -53,7 +53,7 @@ const Page = () => {
           <div className="h-[250px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/project/paper3.png"
-              width={300}
+              width={500}
               height={300}
               quality={100}
               alt="Hero"
@@ -69,7 +69,7 @@ const Page = () => {
           <div className="h-[250px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/project/paper4.png"
-              width={300}
+              width={500}
               height={300}
               quality={100}
               alt="Hero"
@@ -81,7 +81,7 @@ const Page = () => {
 
       <div className="paperCraftGradient rounded-[12px] my_border flex justify-center items-center p-5">
         <div className="w-full sm:w-[400px]">
-          <Image src='/image/project/video.png' alt="Video" width={400} height={200} />
+          <Image src='/image/project/video.png' alt="Video" width={600} height={200} quality={100} />
         </div>
       </div>
     </div>

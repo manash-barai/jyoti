@@ -24,7 +24,7 @@ const Clock: React.FC = () => {
     return () => clearInterval(intervalId); // Clean up on component unmount
   }, []);
 
-  return <div className="text-7xl font-mono">{time}</div>;
+  return <div className="text-3xl float-end lg:text-7xl font-mono">{time}</div>;
 };
 
 export default Clock;

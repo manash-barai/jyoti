@@ -1,5 +1,8 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { useRouter } from 'next/navigation';
+
 
 interface Thought {
   icon: string;
@@ -31,21 +34,23 @@ const social: Thought[] = [
 ];
 
 export default function page() {
+  const router = useRouter();
+
   return (
     <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16">
     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden">
     <section className="text-slate-50 flex flex-col gap-6">
       <div className="">
-        <h1 className="text-4xl sm:text-5xl mb-2 font-bold">hey, i’m Jyoti.</h1>
+        <h1 className="text-4xl sm:text-5xl mb-2 font-bold">Hey, I&rsquo;m Jyoti.</h1>
         <h1 className="text-4xl sm:text-5xl font-bold">
-          i design <span className="text-zinc-600 ">software.</span>
+          I Design <span className="text-zinc-600 ">Software.</span>
         </h1>
       </div>
       <div className="text-zinc-600 text-xl sm:text-2xl font-bold">
-        simplifying tough problems to make accessible solutions with <br />
+        Simplifying tough problems to make accessible solutions .<br />
         <div className="flex items-center">
-          <p className="mr-3">previously @</p>
-          <div>
+          <p className="mr-3">Previously @</p>
+          <div className="flex">
             <Image
               src="/image/icon/companyIcon.svg"
               alt="companyLogo"
@@ -69,15 +74,16 @@ export default function page() {
         <div
           style={{ cursor: "pointer" }}
           className="flex-1 overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+          onClick={()=>router.push('/gallary/art-gallary')}
         >
           <div className="h-[180px] sm:h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
               src="/image/home/1.png"
-              width={200}
+              width={300}
               height={200}
               quality={100}
               alt="Hero"
-              className="hover:scale-110 transition-all duration-200"
+              className="hover:scale-110 transition-all duration-200 p-9"
             />
           </div>
           <div className="p-5 flex justify-between items-end">
@@ -93,11 +99,13 @@ export default function page() {
         <div
           style={{ cursor: "pointer" }}
           className="flex-1 overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+          onClick={()=>router.push('/gallary/dashboard')}
         >
           <div className="h-[180px] sm:h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
+            
               src="/image/home/2.png"
-              width={270}
+              width={400}
               height={270}
               quality={100}
               alt="Hero"
@@ -130,6 +138,7 @@ export default function page() {
           >
             <div className="w-[37px] h-[37px] rounded-lg">
               <Image
+              
                 src={thought.icon}
                 alt={thought.service}
                 width={37}
@@ -137,11 +146,11 @@ export default function page() {
                 className="rounded-lg"
               />
             </div>
-            <div>
-              <h1 className="text-slate-50 font-bold text-sm sm:text-base">
+            <div >
+              <h1 className="text-slate-50 text-start font-bold text-sm sm:text-base">
                 {thought.title}
               </h1>
-              <p className="text-zinc-500 font-semibold text-xs sm:text-sm">
+              <p className="text-zinc-500 text-start font-semibold text-xs sm:text-sm">
                 {thought.service}
               </p>
             </div>

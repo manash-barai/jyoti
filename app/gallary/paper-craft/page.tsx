@@ -9,7 +9,9 @@ const Page = () => {
           Paper Crafting Site
         </h1>
         <p className="text-[20px] text-[#858585]">
-          Experience the joy of creating and appreciating handcrafted decorative objects, where every piece tells a unique story crafted with care and creativity.
+          Experience the joy of creating and appreciating handcrafted decorative
+          objects, where every piece tells a unique story crafted with care and
+          creativity.
         </p>
       </div>
 
@@ -80,8 +82,21 @@ const Page = () => {
       </div>
 
       <div className="paperCraftGradient rounded-[12px] my_border flex justify-center items-center p-5">
-        <div className="w-full sm:w-[400px]">
-          <Image src='/image/project/video.png' alt="Video" width={600} height={200} quality={100} />
+        <div
+          style={{ cursor: "pointer" }}
+          className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg my_border cardAnimation"
+        >
+          <div className="h-[250px] overflow-hidden homepageCardGradient flex justify-center items-center">
+            <iframe
+              width="400"
+              height="250"
+              src="https://www.youtube.com/embed/Rd5kY0qweC0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; picture-in-picture"
+              allowFullScreen
+              className="transition-transform duration-300 transform group-hover:scale-110"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>

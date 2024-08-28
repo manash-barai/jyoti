@@ -139,7 +139,7 @@ const Page = () => {
           >
             <div className="h-[235px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
-                src="/image/home/artgalary.png"
+                src="/image/home/artgallary.png"
                 width={500}
                 height={300}
                 quality={100}

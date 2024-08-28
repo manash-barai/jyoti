@@ -13,8 +13,8 @@ export default function Footer({ menuWidth }: NavbarProps) {
         menuWidth ? "lg:px-52 px-10" : "px-20 lg:px-72"
       }  border-zinc-600 border-t`}
     >
-      <div className="lg:flex grid grid-cols-2 py-11 w-full">
-        <ul className="text-gray-200 flex  text-[16px] lg:text-[22px] justify-start lg:justify-between lg:gap-9 gap-3 w-full   text  ">
+      <div className="lg:flex  py-11 w-full ">
+        <ul className="text-gray-200 flex flex-wrap  text-[16px] lg:text-[22px] justify-start lg:justify-between lg:gap-9 gap-3    text    ">
          
           <li className="hover:text-white  pr-5 border-r transition-all duration-150 w-auto ">
             {" "}
@@ -35,7 +35,7 @@ export default function Footer({ menuWidth }: NavbarProps) {
           </li>
           <li className="hover:text-white  transition-all duration-150 w-auto ">
             {" "}
-            <Link href={"#"}>About</Link>{" "}
+            <Link href={"/about"}>About</Link>{" "}
           </li>
         </ul>
 

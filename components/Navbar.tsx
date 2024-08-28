@@ -98,7 +98,7 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
     >
       <div className="flex flex-col h-screen justify-between py-4 relative">
         {menubar ?  <button
-          className="expand rounded-full overflow-hidden  absolute -end-[15px] bg-zinc-900 text-white px-1 py-0 border border-zinc-600  "
+          className="expand rounded-full overflow-hidden  absolute -end-[15px] bg-zinc-900 text-white px-2 py-0 border border-zinc-600  flex jus items-center pb-1"
           onClick={() => {
             setMenuWidth(!menuWidth);
             widthsubstract(!menuWidth);
@@ -107,9 +107,9 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
           onMouseLeave={() => setHoverId(null)}
         >
           {menuWidth ? (
-           "<-"
+           "<"
           ) : (
-            '->'
+            '>'
           )}
         </button> :<button className={`text-white bg-zinc-900 border-2 px-1 ${mobileNavbar?'text-[14px]':'text-[18px]'} rounded-full py-0 border-zinc-600 z-50"   ${mobileNavbar ?'absolute -right-3':'fixed top-2 start-1'}  `}  onClick={()=>setMobileNavbar(!mobileNavbar)} >
           {mobileNavbar?'<-':'->'}
@@ -321,6 +321,8 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
                 </Link>
               </li>
             ))}
+
+            
           </ul>
         </div>
        
